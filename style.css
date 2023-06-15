@@ -1,0 +1,448 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@500;700;900&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Barlow";
+}
+
+:root {
+  --orange: #f16718;
+  --lightorange: #f16718;
+  --darkblue: #162542;
+  --grayish: #7b8bad;
+  --whitegray: #e8eff2;
+  --white: #ffffff;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin: 23px 24.5px 64px 24px;
+}
+
+header button {
+  font-size: 16px;
+  font-weight: 700;
+  background-color: var(--whitegray);
+  border: none;
+  width: 150px;
+  height: 48px;
+  border-radius: 8px;
+  color: var(--darkblue);
+}
+
+.hero {
+  margin: 0px 24px 32px 24px;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 900;
+  margin-bottom: 32px;
+}
+
+p {
+  color: var(--grayish);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  margin-bottom: 32px;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  margin-bottom: 60px;
+}
+
+.flex button {
+  width: 150px;
+  height: 48px;
+  background-color: var(--lightorange);
+  color: var(--white);
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.flex h2 {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--grayish);
+}
+
+.keyboardflex {
+  display: flex;
+  gap: 25px;
+}
+
+.description {
+  margin-top: 100px;
+}
+
+.description h3 {
+  font-size: 32px;
+  font-weight: 900;
+  color: var(--darkblue);
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0px 60px 24px 60px;
+  line-height: 36px;
+}
+
+.description p {
+  text-align: center;
+  margin: 0px 24px 111px 24px;
+}
+
+.features {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.features .first .pc {
+  background-color: var(--orange);
+  width: 65px;
+  height: 65px;
+  border-radius: 16px;
+  border: none;
+  background-image: url(./resorces/pc.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  margin: auto;
+  margin-bottom: 48px;
+}
+
+.features .first h3 {
+  font-size: 24px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.features .first p {
+  text-align: center;
+  margin: 24px 24px 64px 24px;
+}
+
+.features .second .bluetooth {
+  background-color: var(--orange);
+  width: 65px;
+  height: 65px;
+  border-radius: 16px;
+  border: none;
+  background-image: url(./resorces/bluethoos.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  margin: auto;
+  margin-bottom: 48px;
+}
+
+.features .second h3 {
+  font-size: 24px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.features .second p {
+  text-align: center;
+  margin: 24px 24px 64px 24px;
+}
+
+.features .third .battery {
+  background-color: var(--orange);
+  width: 65px;
+  height: 65px;
+  border-radius: 16px;
+  border: none;
+  background-image: url(./resorces/battery.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  margin: auto;
+  margin-bottom: 48px;
+}
+
+.features .third h3 {
+  font-size: 24px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.features .third p {
+  text-align: center;
+  margin: 24px 24px 64px 24px;
+}
+
+.features .fourth .idea {
+  background-color: var(--orange);
+  width: 65px;
+  height: 65px;
+  border-radius: 16px;
+  border: none;
+  background-image: url(./resorces/idea.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  margin: auto;
+  margin-bottom: 48px;
+}
+
+.features .fourth h3 {
+  font-size: 24px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.features .fourth p {
+  text-align: center;
+  margin: 24px 24px 64px 24px;
+}
+
+footer {
+  margin-bottom: 50px;
+}
+
+footer h4 {
+  font-size: 16px;
+  color: var(--grayish);
+  text-align: center;
+  font-weight: 500;
+}
+
+.tablet {
+  display: none;
+}
+
+@media screen and (min-width: 700px) {
+  .mobile {
+    display: none;
+  }
+  header {
+    margin: 49px 40px 64px 39px;
+  }
+
+  header button {
+    width: 175px;
+    height: 58px;
+  }
+
+  .hero {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-left: 39px;
+    margin-right: 0px;
+  }
+
+  .hero h1 {
+    margin: 111px 0px 34px 0px;
+  }
+
+  .hero p {
+    margin-right: 69px;
+    margin-bottom: 39px;
+  }
+
+  .tablet {
+    margin-top: 62px;
+  }
+
+  .tablet {
+    display: flex;
+  }
+
+  .hero button {
+    width: 175px;
+    height: 58px;
+  }
+
+  .keyboardflex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .keyboardflex .tablet {
+    margin-top: 0px;
+  }
+
+  .description {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    margin-bottom: 140px;
+  }
+
+  .description h3,
+  p {
+    text-align: start;
+    margin: 0px 0px 0px 0px;
+  }
+
+  .description h3 {
+    margin-left: 39px;
+    width: 255px;
+  }
+
+  .description p {
+    margin: 0px 40px 0px 36px;
+    text-align: start;
+  }
+
+  .features {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-row: auto auto;
+    row-gap: 72px;
+    margin-left: 39px;
+  }
+
+  .features .first .pc {
+    margin: 0px 0px 40px 0px;
+  }
+
+  .features .first h3 {
+    text-align: start;
+  }
+
+  .features .first p {
+    margin: 24px 0px 0px 0px;
+    text-align: start;
+    margin-right: 69px;
+  }
+
+  .features .second .bluetooth {
+    margin: 0px 0px 40px 0px;
+  }
+
+  .features .second h3 {
+    text-align: start;
+  }
+
+  .features .second p {
+    margin: 24px 0px 0px 0px;
+    text-align: start;
+    margin-right: 98px;
+  }
+
+  .features .third .battery {
+    margin: 0px 0px 40px 0px;
+  }
+
+  .features .third h3 {
+    text-align: start;
+  }
+
+  .features .third p {
+    margin: 24px 0px 0px 0px;
+    text-align: start;
+    margin-right: 69px;
+  }
+
+  .features .fourth .idea {
+    margin: 0px 0px 40px 0px;
+  }
+
+  .features .fourth h3 {
+    text-align: start;
+  }
+
+  .features .fourth p {
+    margin: 24px 0px 0px 0px;
+    text-align: start;
+    margin-right: 98px;
+  }
+
+  footer {
+    margin-top: 140px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .tablet {
+    display: none;
+  }
+
+  header {
+    margin: 55px 165px 83px 165px;
+  }
+
+  .hero {
+    padding-left: 165px;
+    margin: 0px;
+    background-image: url(./resorces/bg1.svg);
+    background-repeat: no-repeat;
+    background-position: 100% 0%;
+    margin-bottom: 40px;
+  }
+
+  .hero .pcpic {
+    margin-right: 165px;
+  }
+
+  .text h1 {
+    margin: 88px 125px 24px 0px;
+    width: 445px;
+    font-size: 56px;
+  }
+
+  .text p {
+    width: 445px;
+    margin: 0px 125px 40px 0px;
+    font-size: 18px;
+  }
+
+  .flex {
+    gap: 40px;
+  }
+
+  .combine {
+    display: grid;
+    grid-template-columns: auto auto;
+    background-image: url(./resorces/bg2.svg);
+    background-repeat: no-repeat;
+    background-position: 0% 96%;
+  }
+
+  .description {
+    display: grid;
+    grid-template-columns: auto;
+    margin-left: 125px;
+    margin-right: 165px;
+    row-gap: 27px;
+  }
+
+  .description p {
+    margin: 0;
+  }
+
+  .description h3 {
+    margin: 0;
+  }
+
+  .keyboardflex {
+    margin-left: 165px;
+  }
+
+  .features {
+    margin: 170px;
+    display: flex;
+  }
+
+  .features .first p {
+    margin: 24px 30px 0px 0px;
+  }
+  .features .second p {
+    margin: 24px 30px 0px 0px;
+  }
+  .features .third p {
+    margin: 24px 30px 0px 0px;
+  }
+  .features .fourth p {
+    margin: 24px 30px 0px 0px;
+  }
+}
