@@ -218,6 +218,10 @@ footer h4 {
   display: none;
 }
 
+.pcpic {
+  display: none;
+}
+
 @media screen and (min-width: 700px) {
   .mobile {
     display: none;
@@ -367,8 +371,19 @@ footer h4 {
     display: none;
   }
 
+  .pcpic {
+    display: flex;
+  }
+
   header {
     margin: 55px 165px 83px 165px;
+  }
+
+  header button:hover {
+    cursor: pointer;
+    background-color: var(--darkblue);
+    color: var(--white);
+    transition: 0.2s;
   }
 
   .hero {
@@ -382,6 +397,12 @@ footer h4 {
 
   .hero .pcpic {
     margin-right: 165px;
+  }
+
+  .hero button:hover {
+    background-color: #ff9b62;
+    transition: 0.2s;
+    cursor: pointer;
   }
 
   .text h1 {
@@ -435,14 +456,22 @@ footer h4 {
 
   .features .first p {
     margin: 24px 30px 0px 0px;
+    width: 255px;
+    height: 130px;
   }
   .features .second p {
     margin: 24px 30px 0px 0px;
+    width: 255px;
+    height: 130px;
   }
   .features .third p {
     margin: 24px 30px 0px 0px;
+    width: 255px;
+    height: 130px;
   }
   .features .fourth p {
     margin: 24px 30px 0px 0px;
+    width: 255px;
+    height: 130px;
   }
 }
